@@ -91,4 +91,23 @@ z = (y + 4) * 5**2
 print( f'z = (y + 4) * 5**2:', z) 
 print(f'5**2:',5**2)
 print(f'20*25:',20*25)
+
+#EXERCISE 
 print( f'(2+3)*10-3:',(2+3)*10-3 )
+
+#to round up 
+a = 2.9 
+print(f'Round up 2.9 with round Function: {round(a)}')
+
+#abs    for absolute number 
+b = -25
+print( f'the (abs)olute value of -25 is:',abs(b) )
+c = 75 
+print( f'the (abs)olute value of 75 is:',abs(c) )
+d = -4+23
+print( abs(d) )
+
+# to have/use more math options we need to import math module
+import math 
+print(math.ceil(2.9))       #ceil is the ceiling of a number. 
+print(math.ceil(5.1))       #here we get still get 6. 
