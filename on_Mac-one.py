@@ -111,3 +111,53 @@ print( abs(d) )
 import math 
 print(math.ceil(2.9))       #ceil is the ceiling of a number. 
 print(math.ceil(5.1))       #here we get still get 6. 
+print (math.floor(5.4))     #here we get 5 as it rounds it down
+
+print(f'si 19 es numero Infinito: {math.isinf(d)}')
+
+
+#if statements
+#set boolean 
+usuario = 'paco'
+is_hot = False
+is_cold = False
+
+if is_hot:
+    print(f'"its a hot day!"'.title())
+    print(f'Please, drink plenty of water!!'.title())    
+elif is_cold:
+    print(f"it's a cold day!".title())
+    print(f'Please, wear warm clothes!'.title())
+else :
+    print(f'is a lovely day!'.title())
+
+print(f'disfruta de tu dia, {usuario}!!'.title())
+
+
+
+#credit exercise
+good_credit = False
+house_price = 1000000
+if good_credit:
+    downpayment = 0.1 * house_price
+    print(f' downpayment bueno: ${downpayment} '.title() )
+else :
+    downpayment= 0.2 * house_price
+    print(f'downpayment malo: ${downpayment} '.title() )
+    
+
+#logical operators: and, or, not 
+has_income = False
+has_credit = True
+criminal = True
+if has_income or has_credit and not criminal: 
+    downpayment = 0.05 * house_price
+    print( f'downpayment income and credit bueno: ${downpayment} '.title() )
+    print(f'{usuario} is elegible for a ${house_price} house loan with only a ${downpayment} downpayment'.title())
+elif has_income or has_credit and criminal: 
+    downpayment_2 = 0.75 * house_price
+    print( f'downpayment income and credit bueno but criminal record: ${downpayment_2} downpayment'.title() )
+    print(f'{usuario} is elegible for a ${house_price} house loan with only a ${downpayment_2} downpayment'.title())
+else: 
+    print(f'maybe next year...{usuario}')
+    
