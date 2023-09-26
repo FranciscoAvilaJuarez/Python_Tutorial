@@ -161,3 +161,65 @@ elif has_income or has_credit and criminal:
 else: 
     print(f'maybe next year...{usuario}')
     
+
+#temp exercise 
+#temp = int( input( 'PLease enter the temperature: '.title() ) )
+#if temp > 30: 
+#    print( f'its a hot day!! the temp is {temp} celcius'.title() )
+    
+#elif temp < 10: 
+#    print( f'its a cold day!! the temp is {temp} celcius'.title() )
+    
+#else: 
+#    print( f'its neither hot nor cold. we are at {temp} celcius'.title() ) 
+    
+ 
+    
+
+#name exercise
+nombre = str( input( 'please, enter your first name: '.title() ) )
+if len(nombre) <= 3:        #nombre<(nombre.count<3)
+    print( f'the name "{nombre}" must be at least longer than 3 chars. '.title() )
+    
+elif len(nombre) >= 60: 
+    print( f'the name "{nombre}" must be shorter than 60 chars. '.title() )
+    
+else:
+    print( f'the name, {nombre}. looks good! '.title() )
+print( f'thank you, {nombre}'.title() )
+
+print('line 190')
+
+
+
+
+#ex pounds to kilos
+print( f'hello!! {nombre}')
+
+#options
+kilos=1
+pounds=2
+
+peso = int( input( f'please enter your weight:_'.title() ) )                        #how much?
+tipo = int( input( f'is this in {kilos})kilos or {pounds})pounds?:_'.title() ) )    #one/kilos or two/pounds? 
+
+#kilos
+if tipo==kilos:
+    #print(f'{kilos}_kilos')
+    kg_to_lb = peso * 2.205                                                         #formula 
+    print( f'{nombre},'.title() ) 
+    print( f'your weight {peso}kg is:_{math.floor(kg_to_lb)} in lbs floor'.title() )      #we use math.floor to round down from .205
+    #print( f'your weight {peso}kg is: {math.ceil(kg_to_lb)} in lbs ceil'.title() )       #we use math.ceil to round up from .205
+    
+#pounds
+elif tipo==pounds:
+    #print(f'{pounds}_pounds')
+    lb_to_kg = peso / 2.205                                                        #formula 
+    print( f'{nombre},'.title() )
+    #print(f'your weight {peso}lbs is: {math.floor(lb_to_kg)} in kg floor'.title() )      #we use math.floor to round down from .205
+    print(f'your weight {peso}lbs is:_{math.ceil(lb_to_kg)} in kg ceil'.title() )       #we use math.ceil to round up from .205
+    
+else:
+    print( f'please,{nombre}. try again'.title() )
+    
+print('thank you, come again.')
